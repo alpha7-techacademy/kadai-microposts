@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class UserFollowController extends Controller
 {
-    **
+    /**
      * ユーザをフォローするアクション。
      *
      * @param  $id  相手ユーザのid
