@@ -1,4 +1,4 @@
-@if (Auth::id() != $micropost->id)
+
     @if (Auth::user()->is_favorite($micropost->id))
         {{-- アンフェイバリットボタンのフォーム --}}
         {!! Form::open(['route' => ['favorites.unfavorite', $micropost->id], 'method' => 'delete']) !!}
@@ -10,4 +10,4 @@
             {!! Form::submit('Favirite', ['class' => "btn btn-primary btn-block"]) !!}
         {!! Form::close() !!}
     @endif
-@endif
+
